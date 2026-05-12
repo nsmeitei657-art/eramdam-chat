@@ -83,4 +83,4 @@ def handle_message(msg):
 
 # ---------------- RUN ----------------
 if __name__ == "__main__":
-    socketio.run(app, host="127.0.0.1", port=5000, debug=True)
+    socketio = SocketIO(app, cors_allowed_origins="*", async_mode="threading")
